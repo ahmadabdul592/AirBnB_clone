@@ -1,1 +1,10 @@
-Implementation of AirBnB clone group project using python as backend to mimick 'https://www.airbnb.com' website
+# AirBnB Clone :smiley::house:
+The goal of this project is to deploy a simple copy of the [AirBnB website](https://www.airbnb.com/) on a server.
+
+## The console
+The console is a command line interface that would be used to manage objects i.e create, update and destroy data in a file  storage.
+
+### Usage :
+```
+./console.py
+```
