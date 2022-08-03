@@ -36,8 +36,7 @@ class TestBaseModel(unittest.TestCase):
         """Tests instantiation of BaseModel class."""
 
         bm = BaseModel()
-        self.assertEqual(str(type(bm)),
-                                    "<class 'models.base_model.BaseModel'>")
+        self.assertEqual(str(type(bm)), "<class'models.base_model.BaseModel'>")
         self.assertIsInstance(bm, BaseModel)
         self.assertTrue(issubclass(type(bm), BaseModel))
 
@@ -149,8 +148,8 @@ class TestBaseModel(unittest.TestCase):
     def test_4_instantiation_dict(self):
         """Tests instantiation with **kwargs from custom dict."""
         df = {"__class__": "BaseModel",
-              "updated_at":
-                    datetime(2050, 12, 30, 23, 59, 59, 123456).isoformat(),
+              "updated_at": datetime(2050, 12, 30, 23, 59, 59, 123456)
+              .isoformat(),
               "created_at": datetime.now().isoformat(),
               "id": uuid.uuid4(),
               "var": "foobar",
