@@ -3,7 +3,7 @@
 Defines a class that will be the base for all the classes to
 be created in the AirBnB module.
 """
-"""Defines the BaseModel class."""
+"""Module BaseModel class."""
 import models
 from uuid import uuid4
 from datetime import datetime
