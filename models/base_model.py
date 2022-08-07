@@ -2,8 +2,8 @@
 """
 Defines a class that will be the base for all the classes to
 be created in the AirBnB module.
-"""
-"""Module BaseModel class."""
+Defines the BaseModel class."""
+
 import models
 from uuid import uuid4
 from datetime import datetime
@@ -36,8 +36,8 @@ class BaseModel:
         """
             Returns the string representation of BaseModel
         """
-        return "[{}] ({}) {}".format(self.__class__.__name__,
-                self.id, self.__dict__)
+        return "[{}]({}){}".format(self.__class__.__name__, self.id,
+                                   self.__dict__)
 
     def save(self):
         """
