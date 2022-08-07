@@ -138,6 +138,18 @@ class HBNBCommand(cmd.Cmd):
                 obj_list.append(obj.__str__())
             print(obj_list)
 
+    def do_count(self, line):
+        """Counts the instances of a class.
+        """
+        args = parse(line)
+        count = 0
+        objs = models.storage.all()
+        for key, value in objs.items():
+            if key.split(".")[0] == args:
+                count += 1
+                print(count)
+        return count
+
     def do_update(self, line):
         """Updates an instance based on the class name and id and attr name"""
         args = parse(line)
