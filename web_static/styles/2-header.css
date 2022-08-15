@@ -1,0 +1,8 @@
+/* The styling sheet for the header */
+header {
+	margin: 0px;
+	padding: 0px;
+	background-color: #FF0000;
+	height: 70px;
+	width: 100%;
+}
